@@ -17,8 +17,10 @@
   "bugs": {
     "url": "https://github.com/suxin2017/is/issues"
   },
-  "hook": {
-    "pre-commit": "npm test"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   },
   "homepage": "https://github.com/suxin2017/is#readme",
   "dependencies": {},
