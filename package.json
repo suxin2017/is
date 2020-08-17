@@ -5,13 +5,16 @@
   "scripts": {
     "build": "tsc",
     "eslint:test": "eslint --ext .ts src --fix",
-    "test": "jest"
+    "test": "jest",
+    "doc": "tsc && jsdoc -c conf.json --verbose"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suxin2017/is.git"
   },
-  "keywords": [],
+  "keywords": [
+    "util"
+  ],
   "author": "bxer",
   "license": "ISC",
   "bugs": {
@@ -29,7 +32,8 @@
   },
   "homepage": "https://github.com/suxin2017/is#readme",
   "dependencies": {
-    "@types/jest": "^26.0.10"
+    "@types/jest": "^26.0.10",
+    "jsdoc": "^3.6.5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -40,7 +44,8 @@
     "babel-jest": "^26.3.0",
     "eslint": "^7.7.0",
     "husky": "^4.2.5",
-    "jest": "^26.4.0",
+    "minami": "^1.2.3",
+    "typedoc": "^0.18.0",
     "typescript": "^3.9.7"
   }
 }
