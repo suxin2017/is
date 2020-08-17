@@ -1,8 +1,7 @@
 {
-  "name": "is",
-  "version": "1.0.0",
+  "name": "is-everything",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "eslint:test": "eslint --ext .ts src --fix",
@@ -18,6 +17,10 @@
   "bugs": {
     "url": "https://github.com/suxin2017/is/issues"
   },
+  "main": "dist/index.js",
+  "files": [
+    "src"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "npm run eslint:test",
