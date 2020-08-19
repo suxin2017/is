@@ -1,5 +1,5 @@
-import getTag from '../.internal/getTag'
-import isObjectLike from './isObjectLike'
+import getTag from "../.internal/getTag";
+import isObjectLike from "../like/isObjectLike";
 
 /**
  * Checks if `value` is likely an `arguments` object.
@@ -16,8 +16,8 @@ import isObjectLike from './isObjectLike'
  * isArguments([1, 2, 3])
  * // => false
  */
-function isArguments(value: unknown):value is IArguments{
-  return isObjectLike(value) && getTag(value) == '[object Arguments]'
+function isArguments(value: unknown): value is IArguments {
+	return isObjectLike(value) && getTag(value) == "[object Arguments]";
 }
 
-export default isArguments
+export default isArguments;

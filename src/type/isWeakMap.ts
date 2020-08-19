@@ -1,5 +1,5 @@
-import getTag from '../.internal/getTag.js'
-import isObjectLike from './isObjectLike.js'
+import getTag from "../.internal/getTag.js";
+import isObjectLike from "../like/isObjectLike.js";
 
 /**
  * Checks if `value` is classified as a `WeakMap` object.
@@ -17,8 +17,8 @@ import isObjectLike from './isObjectLike.js'
  * // => false
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
-function isWeakMap<T extends object>(value:any):value is WeakSet<T> {
-  return isObjectLike(value) && getTag(value) == '[object WeakMap]'
+function isWeakMap(value: any): value is WeakSet<any> {
+	return isObjectLike(value) && getTag(value) == "[object WeakMap]";
 }
 
-export default isWeakMap
+export default isWeakMap;

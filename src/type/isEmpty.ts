@@ -1,12 +1,12 @@
-import getTag from '../.internal/getTag'
-import isArguments from './isArguments'
-import isArrayLike from './isArrayLike'
+import getTag from "../.internal/getTag";
+import isArguments from "./isArguments";
+import isArrayLike from "../like/isArrayLike";
 // import isBuffer from './isBuffer'
-import isPrototype from '../.internal/isPrototype'
+import isPrototype from "../.internal/isPrototype";
 // import isTypedArray from './isTypedArray'
 
 /** Used to check objects for own properties. */
-const hasOwnProperty = Object.prototype.hasOwnProperty
+const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /**
  * Checks if `value` is an empty object, collection, map, or set.
@@ -43,30 +43,34 @@ const hasOwnProperty = Object.prototype.hasOwnProperty
  * // => false
  */
 
-function isEmpty(value:any): boolean{
-  if (value == null) {
-    return true
-  }
-  if (isArrayLike(value) &&
-      (Array.isArray(value) || typeof value === 'string' || typeof value.splice === 'function' ||
-				// isBuffer(value) || 
-				// isTypedArray(value) || 
-				isArguments(value))) {
-    return !value.length
-  }
-  const tag = getTag(value)
-  if (tag == '[object Map]' || tag == '[object Set]') {
-    return !value.size
-  }
-  if (isPrototype(value)) {
-    return !Object.keys(value).length
+function isEmpty(value: any): boolean {
+	if (value == null) {
+		return true;
 	}
-  for (const key in (value as any)) {
-    if (hasOwnProperty.call(value, key)) {
-      return false
-    }
-  }
-  return true
+	if (
+		isArrayLike(value) &&
+		(Array.isArray(value) ||
+			typeof value === "string" ||
+			typeof value.splice === "function" ||
+			// isBuffer(value) ||
+			// isTypedArray(value) ||
+			isArguments(value))
+	) {
+		return !value.length;
+	}
+	const tag = getTag(value);
+	if (tag == "[object Map]" || tag == "[object Set]") {
+		return !value.size;
+	}
+	if (isPrototype(value)) {
+		return !Object.keys(value).length;
+	}
+	for (const key in value as any) {
+		if (hasOwnProperty.call(value, key)) {
+			return false;
+		}
+	}
+	return true;
 }
 
-export default isEmpty
+export default isEmpty;

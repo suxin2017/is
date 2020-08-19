@@ -1,5 +1,5 @@
-import getTag from '../.internal/getTag'
-import isObjectLike from './isObjectLike'
+import getTag from "../.internal/getTag";
+import isObjectLike from "../like/isObjectLike";
 
 /**
  * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
@@ -17,13 +17,16 @@ import isObjectLike from './isObjectLike'
  * isError(Error)
  * // => false
  */
-function isError(value: any):value is Error {
-  if (!isObjectLike(value)) {
-    return false
-  }
-  const tag = getTag(value)
-  return tag == '[object Error]' || tag == '[object DOMException]' ||
-    (typeof value.message === 'string' && typeof value.name === 'string' )
+function isError(value: any): value is Error {
+	if (!isObjectLike(value)) {
+		return false;
+	}
+	const tag = getTag(value);
+	return (
+		tag == "[object Error]" ||
+		tag == "[object DOMException]" ||
+		(typeof value.message === "string" && typeof value.name === "string")
+	);
 }
 
-export default isError
+export default isError;
