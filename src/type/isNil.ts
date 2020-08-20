@@ -3,7 +3,7 @@
  *
  * @since 0.0.1
  * @category Lan
- * @memberof Typg
+ * @memberof Type
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is nullish, else `false`.
  * @example

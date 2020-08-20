@@ -7,7 +7,7 @@ import isObjectLike from "../like/isObjectLike";
  *
  * @since 0.0.1
  * @category Lan
- * @memberof Typg
+ * @memberof Type
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is an error object, else `false`.
  * @example
