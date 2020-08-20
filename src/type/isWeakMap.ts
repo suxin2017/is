@@ -6,7 +6,7 @@ import isObjectLike from "../like/isObjectLike.js";
  *
  * @since 0.0.1
  * @category Lan
- * @memberof Typg
+ * * @memberof Typg
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a weak map, else `false`.
  * @example

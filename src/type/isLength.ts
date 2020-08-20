@@ -9,7 +9,7 @@ const MAX_SAFE_INTEGER = 9007199254740991;
  *
  * @since 0.0.1
  * @category Lan
- * * @memberof Typg
+ * @memberof Typg
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
  * @example
