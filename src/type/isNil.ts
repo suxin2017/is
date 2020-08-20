@@ -1,8 +1,9 @@
 /**
  * Checks if `value` is `null` or `undefined`.
  *
- * @since 4.0.0
- * @category Lang
+ * @since 0.0.1
+ * @category Lan
+ * * @memberof Typg
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is nullish, else `false`.
  * @example
@@ -16,8 +17,8 @@
  * isNil(NaN)
  * // => false
  */
-function isNil(value:any):value is null | undefined {
-  return value == null
+function isNil(value: any): value is null | undefined {
+	return value == null;
 }
 
-export default isNil
+export default isNil;

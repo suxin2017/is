@@ -4,9 +4,10 @@ import isObjectLike from "../like/isObjectLike";
 /**
  * Checks if `value` is likely an `arguments` object.
  *
- * @since 0.1.0
+ * @since 0.0.1
  * @category Lang
  * @param {*} value The value to check.
+ * @memberof Type
  * @returns {boolean} Returns `true` if `value` is an `arguments` object, else `false`.
  * @example
  *

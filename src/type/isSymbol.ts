@@ -1,10 +1,11 @@
-import getTag from '../.internal/getTag.js'
+import getTag from "../.internal/getTag.js";
 
 /**
  * Checks if `value` is classified as a `Symbol` primitive or object.
  *
- * @since 4.0.0
- * @category Lang
+ * @since 0.0.1
+ * @category Lan
+ * * @memberof Typg
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
  * @example
@@ -15,9 +16,12 @@ import getTag from '../.internal/getTag.js'
  * isSymbol('abc')
  * // => false
  */
-function isSymbol(value: any):value is symbol {
-  const type = typeof value
-  return type == 'symbol' || (type === 'object' && value != null && getTag(value) == '[object Symbol]')
+function isSymbol(value: any): value is symbol {
+	const type = typeof value;
+	return (
+		type == "symbol" ||
+		(type === "object" && value != null && getTag(value) == "[object Symbol]")
+	);
 }
 
-export default isSymbol
+export default isSymbol;

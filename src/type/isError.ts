@@ -5,8 +5,9 @@ import isObjectLike from "../like/isObjectLike";
  * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
  * `SyntaxError`, `TypeError`, or `URIError` object.
  *
- * @since 3.0.0
- * @category Lang
+ * @since 0.0.1
+ * @category Lan
+ * * @memberof Typg
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is an error object, else `false`.
  * @example

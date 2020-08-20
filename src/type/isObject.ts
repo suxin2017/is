@@ -3,8 +3,9 @@
  * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
  * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
  *
- * @since 0.1.0
- * @category Lang
+ * @since 0.0.1
+ * @category Lan
+ *  @memberof Typ
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is an object, else `false`.
  * @example
@@ -22,9 +23,9 @@
  * // => false
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
-function isObject(value: any):value is object {
-  const type = typeof value
-  return value != null && (type === 'object' || type === 'function')
+function isObject(value: any): value is object {
+	const type = typeof value;
+	return value != null && (type === "object" || type === "function");
 }
 
-export default isObject
+export default isObject;

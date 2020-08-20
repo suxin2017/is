@@ -5,7 +5,8 @@ import isObjectLike from "./isObjectLike.js";
  * This method is like `isArrayLike` except that it also checks if `value`
  * is an object.
  *
- * @since 4.0.0
+ * @since 0.0.1
+ * @memberof Like
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is an array-like object,

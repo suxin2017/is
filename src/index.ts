@@ -1,6 +1,14 @@
+/**
+ * TODO
+ * @namespace Like
+ */
 export * from "./like/isArrayLike";
 export * from "./like/isArrayLikeObject";
 export * from "./like/isObjectLike";
+/**
+ * TODO
+ * @namespace Type
+ */
 export * from "./type/isArguments";
 export * from "./type/isArray";
 export * from "./type/isBoolean";

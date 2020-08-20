@@ -7,8 +7,9 @@ import isObjectLike from "../like/isObjectLike.js";
  * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
  * classified as numbers, use the `Number.isFinite` method.
  *
- * @since 0.1.0
- * @category Lang
+ * @since 0.0.1
+ * @category Lan
+ * * @memberof Typg
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a number, else `false`.
  * @see isInteger, toInteger, toNumber

@@ -4,8 +4,9 @@ import isObjectLike from "../like/isObjectLike.js";
 /**
  * Checks if `value` is classified as a `WeakSet` object.
  *
- * @since 4.3.0
- * @category Lang
+ * @since 0.0.1
+ * @category Lan
+ * @memberof Typg
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a weak set, else `false`.
  * @example
