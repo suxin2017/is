@@ -2,7 +2,7 @@
  * Checks if `value` is classified as a `Function` object.
  *
  * @since 0.0.1
- * @category Lan
+ * @category lang
  * @memberof Type
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a function, else `false`.

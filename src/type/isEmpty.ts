@@ -19,7 +19,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty;
  * Similarly, maps and sets are considered empty if they have a `size` of `0`.
  *
  * @since 0.0.1
- * @category Lan
+ * @category lang
  * @memberof Type
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is empty, else `false`.

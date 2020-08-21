@@ -6,7 +6,7 @@ import isObjectLike from "../like/isObjectLike";
  * `SyntaxError`, `TypeError`, or `URIError` object.
  *
  * @since 0.0.1
- * @category Lan
+ * @category lang
  * @memberof Type
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is an error object, else `false`.

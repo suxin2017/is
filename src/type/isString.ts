@@ -4,7 +4,7 @@ import getTag from "../.internal/getTag";
  * Checks if `value` is classified as a `String` primitive or object.
  *
  * @since 0.0.1
- * @category Lan
+ * @category lang
  * @memberof Type
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a string, else `false`.
