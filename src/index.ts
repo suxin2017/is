@@ -24,3 +24,16 @@ export * from "./type/isSymbol";
 export * from "./type/isUndefined";
 export * from "./type/isWeakMap";
 export * from "./type/isWeakSet";
+
+/**
+ * @namespace Platform
+ */
+
+export * from "./platform/isBrowser";
+export * from "./platform/isChrome";
+export * from "./platform/isChromium";
+export * from "./platform/isFirefox";
+export * from "./platform/isIE";
+export * from "./platform/isNode";
+export * from "./platform/isOpera";
+export * from "./platform/isSafari";
