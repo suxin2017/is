@@ -7,7 +7,7 @@
  */
 export default function isUserAgent(platform: string): boolean {
 	try {
-		return (navigator?.userAgent?.indexOf(platform) !== -1;
+		return navigator?.userAgent?.indexOf(platform) !== -1;
 	} catch (e) {
 		return false;
 	}
